@@ -1,0 +1,41 @@
+
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+.blocesq{
+   background-color: grey;
+}
+
+#kuoka{
+  height: 20px ;
+  width: 250px;
+ 
+}
+
+.navegacao{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgray;
+}
+
+.secao1{
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.col1{
+  background-color: black;
+}
+
+.bloco2{
+  display: flex;
+  background-color: grey;
+}
+
