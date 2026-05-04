@@ -10,7 +10,7 @@ body {
 }
 
 .blocesq{
-   background-color: grey;
+   background-color: rgb(46, 42, 42);
 }
 
 #kuoka{
@@ -22,7 +22,7 @@ body {
 .navegacao{
   display: flex;
   justify-content: space-between;
-  background-color: darkgray;
+  background-color: rgb(46, 42, 42);
 }
 
 .secao1{
@@ -36,7 +36,7 @@ body {
 
 .bloco2{
   display: flex;
-  background-color: grey;
+  background-color: rgb(46, 42, 42);
 }
 
 .container{
@@ -53,5 +53,5 @@ body {
 .col2{
   display: flex;
   justify-content: top;
-  background-color: grey;
+  background-color: rgb(46, 42, 42)rey;
 }
