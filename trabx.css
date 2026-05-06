@@ -55,3 +55,10 @@ body {
   justify-content: top;
   background-color: rgb(46, 42, 42)rey;
 }
+
+.ani6{
+display: flex;
+align-items: 
+center; 
+gap:  15px;
+}

@@ -26,3 +26,39 @@
 body{
     background-color: rgb(46, 42, 42);
 }
+
+.ani6{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.ani5{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.ani4{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.ani3{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.ani2{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.ani1{
+display: flex;
+align-items: center;
+gap: 15px;
+}

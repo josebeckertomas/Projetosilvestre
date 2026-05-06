@@ -16,11 +16,34 @@
         <img src="" alt="">
         <div class="coluna1">
             <label for="pesquisa">🔍︎ </label>
-            <input id="kuoka" name="kuoka" rows="5" cols="35">
-            </input>
+            <input id="kuoka" name="kuoka" rows="5" cols="35" type="text" id="procurar" placeholder="Procurar" style="text-transform: uppercase;"
+                onkeyup="searchFunction()" />
         </div>
         <h1></h1>
     </div>
+
+<script>
+        function searchFunction() {
+            // Variáveis principais
+            let input = document.getElementById("procurar");
+            let filter = input.value.toUpperCase();
+            let grid = document.querySelector(".ani");
+            let cards = grid.getElementsByClassName("");
+
+            // Loop por todos os cartões de produto
+            for (let i = 0; i < cards.length; i++) {
+                let nomeItem = cards[i].querySelector(".tituloProduto");
+                let txtValue = nomeItem.textContent || nomeItem.innerText;
+
+                // Comparação: se o texto digitado existir no nome do produto
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = ""; // Mostra o produto
+                } else {
+                    cards[i].style.display = "none"; // Esconde o produto
+                }
+            }
+        }
+    </script>
 
 
     <div class="secao1">
@@ -47,50 +70,57 @@
                     Observo Matos Costa com cobiça, sanha de dominação. Um dia, serei o aristocrata dessa terra</h2>
 
                 <div class="container">
-                    <div>
+                      <div class="ani1">
                         <a href="https://www.retrogames.cz/" target="_blank">
                             <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
                                 alt="Descrição da imagem para acessibilidade">
                         </a>
+                       <h1 style="margin: 0;">Animal silvestre maluco</h1>
                     </div>
 
 
-
-                    <div>
+                    <div class="ani2">
                         <a href="https://www.retrogames.cz/" target="_blank">
                             <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
                                 alt="Descrição da imagem para acessibilidade">
                         </a>
+                          <h1 style="margin: 0;">Animal silvestre maluco</h1>
                     </div>
 
 
 
-                    <div>
+                    <div class="ani3">
                         <a href="https://www.retrogames.cz/" target="_blank">
                             <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
                                 alt="Descrição da imagem para acessibilidade">
                         </a>
+                          <h1 style="margin: 0;">Animal silvestre maluco</h1>
                     </div>
 
-                    <div>
+                    <div class="ani4">
                         <a href="https://www.retrogames.cz/" target="_blank">
                             <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
                                 alt="Descrição da imagem para acessibilidade">
                         </a>
+                           <h1 style="margin: 0;">Animal silvestre maluco</h1>
                     </div>
 
-                    <div>
-                        <a href="https://www.retrogames.cz/" target="_blank">
+                    
+                    <div class="ani5">
+                    <a href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\trab2.html" target="_blank">
                             <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
                                 alt="Descrição da imagem para acessibilidade">
                         </a>
+                          <h1 style="margin: 0;">Animal silvestre maluco</h1>
                     </div>
 
-                    <div>
-                        <a href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\trab1.html" target="_blank">
+
+                    <div class="ani6">
+                    <a href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\trab2.html" target="_blank">
                             <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
                                 alt="Descrição da imagem para acessibilidade">
-                        </a>
+                        </a>    
+                           <h1 style="margin: 0;">Animal silvestre maluco</h1>
                     </div>
                 </div>
             </div>
