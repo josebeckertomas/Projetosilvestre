@@ -5,34 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="trabx.css">
+    <link rel="stylesheet" href="trab1.css">
 
 
 </head>
-<div class="wow" <body>
+<div class="wow">
 
 
     <div class="navegacao">
         <img src="" alt="">
         <div class="coluna1">
             <label for="pesquisa">🔍︎ </label>
-            <input id="kuoka" name="kuoka" rows="5" cols="35" type="text" id="procurar" placeholder="Procurar" style="text-transform: uppercase;"
-                onkeyup="searchFunction()" />
+            <input name="kuoka" rows="5" cols="35" type="text"  placeholder="Buscar por nome..." id="procurar" onkeyup="searchFunction()" />
         </div>
         <h1></h1>
     </div>
 
-<script>
+    <script>
         function searchFunction() {
+            console.log("Olá, mundo!")
+
+
             // Variáveis principais
             let input = document.getElementById("procurar");
             let filter = input.value.toUpperCase();
             let grid = document.querySelector(".ani");
-            let cards = grid.getElementsByClassName("");
+            let cards = grid.getElementsByClassName("produtoCard");
+            console.log(cards);
 
             // Loop por todos os cartões de produto
             for (let i = 0; i < cards.length; i++) {
                 let nomeItem = cards[i].querySelector(".tituloProduto");
+                console.log(nomeItem);
                 let txtValue = nomeItem.textContent || nomeItem.innerText;
 
                 // Comparação: se o texto digitado existir no nome do produto
@@ -70,74 +74,102 @@
                     Observo Matos Costa com cobiça, sanha de dominação. Um dia, serei o aristocrata dessa terra</h2>
 
                 <div class="container">
-                      <div class="ani1">
-                        <a href="https://www.retrogames.cz/" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
-                                alt="Descrição da imagem para acessibilidade">
+                    <div class="ani">
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani1.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\wombat_louco_por_tijolo.jpeg"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto">Wombat_comedor_de_tijolo_400R$</h1>
                         </a>
-                       <h1 style="margin: 0;">Animal silvestre maluco</h1>
-                    </div>
 
 
-                    <div class="ani2">
-                        <a href="https://www.retrogames.cz/" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
-                                alt="Descrição da imagem para acessibilidade">
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani2.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\quokka_com_coque_samurai_prateado.jpeg"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto">Kuoka_Samurai_Prateado_200R$</h1>
+
                         </a>
-                          <h1 style="margin: 0;">Animal silvestre maluco</h1>
-                    </div>
 
 
 
-                    <div class="ani3">
-                        <a href="https://www.retrogames.cz/" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
-                                alt="Descrição da imagem para acessibilidade">
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani3.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\c.bandicoot.jpeg"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">Bandicoot_mutante_100R$</h1>
                         </a>
-                          <h1 style="margin: 0;">Animal silvestre maluco</h1>
-                    </div>
 
-                    <div class="ani4">
-                        <a href="https://www.retrogames.cz/" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
-                                alt="Descrição da imagem para acessibilidade">
+
+
+
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani4.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\bancdicoot.webp"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">Bandicoot_50R$</h1>
                         </a>
-                           <h1 style="margin: 0;">Animal silvestre maluco</h1>
-                    </div>
 
-                    
-                    <div class="ani5">
-                    <a href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\trab2.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
-                                alt="Descrição da imagem para acessibilidade">
+
+
+
+
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani5.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\tatu_galinha_sinsistru.jpeg"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">Tatu_galinha_de_matos_costa_600$</h1>
                         </a>
-                          <h1 style="margin: 0;">Animal silvestre maluco</h1>
-                    </div>
 
 
-                    <div class="ani6">
-                    <a href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\trab2.html" target="_blank">
+
+
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani6.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\tatu_galinha_bizarro.jpg"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">Tatu_galinha_100R$</h1>
+                        </a>
+
+
+
+
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani7.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\264461016932.webp"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">Bivalve_monstruoso_500R$</h1>
+                        </a>
+
+
+
+
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani8.html" target="_blank">
+                            <img src="C:\Users\Estudante\Documents\Frutiger\hvSAsgpP_400x400.jpg"
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">Macaco_Chico_da_novela_caras_e_bocas(original)_1000R$</h1>
+                        </a>
+
+
+
+
+                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani9.html" target="_blank">
                             <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
-                                alt="Descrição da imagem para acessibilidade">
-                        </a>    
-                           <h1 style="margin: 0;">Animal silvestre maluco</h1>
+                                alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">Magora_5000R$</h1>
+                        </a>
+
+
                     </div>
                 </div>
             </div>
 
-                <div class="col2">
-                    <h1>Outras info ⛯</h1>
-                </div>
+            <div class="col2">
+                <h1>Outras info ⛯</h1>
             </div>
-
-            <table border="2px">
-
-                <div class="container">
-
-                </div>
         </div>
 
+        <table border="2px">
 
-        </body>
+            <div class="container">
+
+            </div>
+    </div>
+
+
+    </body>
 
 </html>
