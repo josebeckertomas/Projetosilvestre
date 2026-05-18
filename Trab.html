@@ -13,12 +13,19 @@
 
 
     <div class="navegacao">
-        <img src="" alt="">
-        <div class="coluna1">
-            <label for="pesquisa">🔍︎ </label>
-            <input name="kuoka" rows="5" cols="35" type="text"  placeholder="Buscar por nome..." id="procurar" onkeyup="searchFunction()" />
+        <div class="imggif1">
+            <img src="sus.gif" alt="Descrição do GIF">
         </div>
-        <h1></h1>
+        <div class="colunapesq">
+            <label for="pesquisa">🔍︎ </label>
+
+            <input name="kuoka" rows="50" cols="50" type="text" placeholder="Buscar por nome..." id="procurar"
+                onkeyup="searchFunction()" />
+        </div>
+        <div class="imggif2">
+            <img src="picmix.com_1783283.gif"
+                alt="Descrição do GIF">
+        </div>
     </div>
 
     <script>
@@ -26,24 +33,24 @@
             console.log("Olá, mundo!")
 
 
-            // Variáveis principais
+
             let input = document.getElementById("procurar");
             let filter = input.value.toUpperCase();
             let grid = document.querySelector(".ani");
             let cards = grid.getElementsByClassName("produtoCard");
             console.log(cards);
 
-            // Loop por todos os cartões de produto
+
             for (let i = 0; i < cards.length; i++) {
                 let nomeItem = cards[i].querySelector(".tituloProduto");
                 console.log(nomeItem);
                 let txtValue = nomeItem.textContent || nomeItem.innerText;
 
-                // Comparação: se o texto digitado existir no nome do produto
+
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    cards[i].style.display = ""; // Mostra o produto
+                    cards[i].style.display = "";
                 } else {
-                    cards[i].style.display = "none"; // Esconde o produto
+                    cards[i].style.display = "none";
                 }
             }
         }
@@ -67,23 +74,26 @@
         </div>
         <div class="bloco2">
             <div class="col1">
-                <h1> Minha rotina </h1>
-                <h2> A minha rotina é muito legal. Eu acordo todos os dias, e tomo
-                    café e eu como um doce branco comprido bem doce, que pode ser maria mole, mas não tenho certeza
-                    . Depois, desmato 135 arvores, e entrego minha parte da produção da minha fazenda para o mosteiro.
-                    Observo Matos Costa com cobiça, sanha de dominação. Um dia, serei o aristocrata dessa terra</h2>
+                <h1> Bem vindo </h1>
+                <h2> Não há limites legais acerca do site apresentado. Não nos responsabilizamos pelas unidades de
+                    produtos apresentados.
+                    Servimos mercadorias, servimos sonhos, servimos desejos. As procedências dos métodos de caça das
+                    espécies também é vedada.
+                </h2>
 
                 <div class="container">
                     <div class="ani">
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani1.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\wombat_louco_por_tijolo.jpeg"
+                        <a class="produtoCard"
+                            href="ani1.html" target="_blank">
+                            <img src="Frutiger\wombat_louco_por_tijolo.jpeg"
                                 alt="Bandicoot">
                             <h1 class="tituloProduto">Wombat_comedor_de_tijolo_400R$</h1>
                         </a>
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani2.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\quokka_com_coque_samurai_prateado.jpeg"
+                        <a class="produtoCard"
+                            href="ani2.html" target="_blank">
+                            <img src="Frutiger\quokka_com_coque_samurai_prateado.jpeg"
                                 alt="Bandicoot">
                             <h1 class="tituloProduto">Kuoka_Samurai_Prateado_200R$</h1>
 
@@ -91,18 +101,18 @@
 
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani3.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\c.bandicoot.jpeg"
-                                alt="Bandicoot">
+                        <a class="produtoCard"
+                            href="ani3.html" target="_blank">
+                            <img src="Frutiger\c.bandicoot.jpeg" alt="Bandicoot">
                             <h1 class="tituloProduto" style="margin: 0;">Bandicoot_mutante_100R$</h1>
                         </a>
 
 
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani4.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\bancdicoot.webp"
-                                alt="Bandicoot">
+                        <a class="produtoCard"
+                            href="ani4.html" target="_blank">
+                            <img src="Frutiger\bancdicoot.webp" alt="Bandicoot">
                             <h1 class="tituloProduto" style="margin: 0;">Bandicoot_50R$</h1>
                         </a>
 
@@ -110,8 +120,9 @@
 
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani5.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\tatu_galinha_sinsistru.jpeg"
+                        <a class="produtoCard"
+                            href="ani5.html" target="_blank">
+                            <img src="Frutiger\tatu_galinha_sinsistru.jpeg"
                                 alt="Bandicoot">
                             <h1 class="tituloProduto" style="margin: 0;">Tatu_galinha_de_matos_costa_600$</h1>
                         </a>
@@ -119,35 +130,37 @@
 
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani6.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\tatu_galinha_bizarro.jpg"
-                                alt="Bandicoot">
+                        <a class="produtoCard"
+                            href="ani6.html" target="_blank">
+                            <img src="Frutiger\tatu_galinha_bizarro.jpg" alt="Bandicoot">
                             <h1 class="tituloProduto" style="margin: 0;">Tatu_galinha_100R$</h1>
                         </a>
 
 
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani7.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\264461016932.webp"
-                                alt="Bandicoot">
+                        <a class="produtoCard"
+                            href="ani7.html" target="_blank">
+                            <img src="Frutiger\264461016932.webp" alt="Bandicoot">
                             <h1 class="tituloProduto" style="margin: 0;">Bivalve_monstruoso_500R$</h1>
                         </a>
 
 
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani8.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\hvSAsgpP_400x400.jpg"
-                                alt="Bandicoot">
-                            <h1 class="tituloProduto" style="margin: 0;">Macaco_Chico_da_novela_caras_e_bocas(original)_1000R$</h1>
+                        <a class="produtoCard"
+                            href="ani8.html" target="_blank">
+                            <img src="Frutiger\hvSAsgpP_400x400.jpg" alt="Bandicoot">
+                            <h1 class="tituloProduto" style="margin: 0;">
+                                Macaco_Chico_da_novela_caras_e_bocas(original)_1000R$</h1>
                         </a>
 
 
 
 
-                        <a class="produtoCard" href="C:\Users\Estudante\Documents\CASTOBUDISTA\Projetosilvestre\ani9.html" target="_blank">
-                            <img src="C:\Users\Estudante\Documents\Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
+                        <a class="produtoCard"
+                            href="ani9.html" target="_blank">
+                            <img src="Frutiger\random-frutiger-aero-pics-v0-ojmrbcpdmgqd1.webp"
                                 alt="Bandicoot">
                             <h1 class="tituloProduto" style="margin: 0;">Magora_5000R$</h1>
                         </a>

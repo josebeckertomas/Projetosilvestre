@@ -13,16 +13,18 @@ body {
    background-color: rgb(46, 42, 42);
 }
 
-#kuoka{
-  height: 20px ;
-  width: 250px;
+#procurar{
+  height: 40px;
+  width: 300px;
+  justify-content: center;
  
 }
 
 .navegacao{
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(46, 42, 42);
+  justify-content: space-around;
+  background: #061b26;
+  background: linear-gradient(90deg, rgba(6, 27, 38, 1) 0%, rgba(20, 8, 8, 1) 0%, rgba(122, 16, 16, 1) 100%);
 }
 
 .secao1{
@@ -48,6 +50,7 @@ body {
 .container img{
   width: 300px;
   height: 300px;
+  margin: 20;
 }
 
 .col2{
@@ -58,6 +61,37 @@ body {
 
 .ani{
 display: grid;
-grid-template-columns: 2fr 2fr 2fr;
-gap:  15px;
+grid-template-columns: 2fr 2fr;
+gap:  50px;
+}
+
+.ani a{
+  text-decoration: none;
+  color: violet;
+}
+
+.colunapesq{
+height: 100px;
+}
+
+.produtoCard{
+display: flex; 
+gap: 5px;
+}
+
+.tituloProduto{
+  max-width: 400px; 
+    word-wrap: break-word;
+}
+
+.imggif1{
+  height: 300px;
+  width: 350px;
+  display: flex;
+}
+
+.imggif2{
+  height: 300px;
+  width: 300px;
+  
 }
